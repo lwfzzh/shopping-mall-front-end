@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
     <router-view/>
   </div>
 </template>
@@ -12,9 +8,7 @@
 export default {
   created() {
     // eslint-disable-next-line no-unused-vars
-    this.$feng.get('/hello').then(res => {
-      console.log(res)
-    });
+    this.$router.push('home')
   },
   methods:{
 

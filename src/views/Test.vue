@@ -32,6 +32,9 @@
     <el-form-item>
       <el-button type="primary" @click="submitForm('ruleForm')">注册</el-button>
     </el-form-item>
+    <el-form-item>
+      <el-button type="primary" @click="goAbout()">修改</el-button>
+    </el-form-item>
   </el-form>
 </template>
 
@@ -151,6 +154,9 @@ export default {
         }
       });
     },
+    goAbout(){
+      this.$router.push('/about');
+    }
   }
 }
 </script>
